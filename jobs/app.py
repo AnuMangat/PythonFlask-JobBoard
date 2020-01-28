@@ -40,7 +40,7 @@ def close_connection(exception):
     if connection!= None :
         connection.close()
 
-
+   
 
 # to make the route work with jobs as well and without it
 @app.route('/')
