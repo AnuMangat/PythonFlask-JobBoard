@@ -1,4 +1,4 @@
-{% macro show_jobs(job) %}
+{% macro show_job(job) %}
 <div class="card adjust-height">
   <header class="card-header">
     <p class="card-header-title">
@@ -23,12 +23,12 @@
 
 
 
-{% macro show_jobs(job) %}
+{% macro show_jobs(jobs) %}
 <div class="columns is-multiline"></div>
 {% for job in jobs%}
    <div class="column is-half">
 
-       {{ show_jobs(job) }}
+       {{ show_job(job) }}
    </div>
 {% endfor %}
 {% endmacro %}
